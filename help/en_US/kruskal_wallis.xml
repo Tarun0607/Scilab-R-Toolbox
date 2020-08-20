@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from multiply.sci using help_from_sci().
+ *
+ -->
+
+
+<!--This file is licensed under CeCILL
+
+Authors :
+Venkat Ragavan S (mail2venkat21@gmail.com)
+Garima Dave (garimadave628@gmail.com)
+Akash Manish Lad (akashlad4000@gmail.com)
+Tarun A H (tarun.ambili123@gmail.com)
+Mohana N (Assistant Professor, SAS, Divison of Mathematics, Vit Chennai) (mohana.n@vit.ac.in)
+
+-->
+
+<refentry version="5.0-subset Scilab" xml:id="kruskal_wallis" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>kruskal_wallis</refname>
+    <refpurpose>Calls Kruskal Wallis test defined on R which takes PlantGrwoth inbuilt dataset as the argument</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Syntax</title>
+   <synopsis>
+   y = kruskal_wallis()
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>y :</term>
+            <listitem><para> output</para></listitem>
+        </varlistentry>
+        
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function takes PlantGrowth R inbuilt dataset and performs Kruskal Wallis test on the dataset and returns the result.The First value in the output to be intrepreted as test statistic H-value, second value as degree of freedom and the third value as p=value. 
+   </para>
+   <para>
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+// kruskal test
+y = kruskal_wallis()
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Mohana N (Assistant Professor, SAS, Divison of Mathematics, VIT Chennai)</member>
+   <member>Venkat Ragavan S</member>
+   <member>Garima Dave</member>
+   <member>Akash Manish Lad</member>
+   <member>Tarun A H</member>
+   </simplelist>
+</refsection>
+</refentry>

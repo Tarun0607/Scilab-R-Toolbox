@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from multiply.sci using help_from_sci().
+ *
+ -->
+
+
+<!--This file is licensed under CeCILL
+
+Authors :
+Venkat Ragavan S (mail2venkat21@gmail.com)
+Garima Dave (garimadave628@gmail.com)
+Akash Manish Lad (akashlad4000@gmail.com)
+Tarun A H (tarun.ambili123@gmail.com)
+Mohana N (Assistant Professor, SAS, Divison of Mathematics, Vit Chennai) (mohana.n@vit.ac.in)
+
+-->
+
+<refentry version="5.0-subset Scilab" xml:id="kruskal_wallis_vector" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>kruskal_wallis_vector</refname>
+    <refpurpose>Calls Kruskal Wallis test defined on R which takes 2 vectors and the length of the vectors as the argument. This function returns the kruskal test on the 2 vectors passed</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Syntax</title>
+   <synopsis>
+   y = kruskal_wallis_vector(len,vec1,vec2)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>y :</term>
+            <listitem><para> output</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>vec1 and vec2 :</term>
+            <listitem><para>Vectors on which the kruskal test is to be performed</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function accepts accepts two vectors and length of the vectors as arguments and returns the Kruskal Wallis test on these vectors as the output.The first value in the output to be intrepreted as test statistic H-result , the second to be degrees of freedom and the third to be the p-value.
+   </para>
+   <para>
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+// Kruskal test on 2 vectors
+y = kruskal_wallis_vector(3,[1,2,3],[4,5,6])
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Mohana N (Assistant Professor, SAS, Divison of Mathematics, VIT Chennai)</member>
+   <member>Venkat Ragavan S</member>
+   <member>Garima Dave</member>
+   <member>Akash Manish Lad</member>
+   <member>Tarun A H</member>
+   
+   </simplelist>
+</refsection>
+</refentry>

@@ -1,0 +1,87 @@
+// Modify this file to provide a description of your toolbox.
+// This file is used by Atoms GUI in scilab, to show information about the toolbox.
+//
+// Note that it will NOT be used when publishing your toolbox on http://atoms.scilab.org;
+// the present file is only used if you distribute your toolbox yourself.
+// On the http://atoms.scilab.org site, only the information you provide there is used.
+//
+//
+// Lines starting with // are comments
+// (you can remove all the comments designed to help you)
+// Lines starting with a space are continuation of the previous field.
+// Empty lines separate fields.
+
+
+// Unique identifier for this toolbox.
+// It must be alphanumeric, start with a letter and contain neither space
+// nor special characters other than underscore or dash.
+Toolbox: Scilab-R-Toolbox
+
+// Human-friendly name for your toolbox
+Title: Scilab-R-Toolbox
+
+// One-line description for your toolbox
+Summary: To serve the statistical testing purpose by integrating R-Studio functions in Scilab via C libraries.
+
+// Version number, in format 'major.minor.patch', or
+// 'major.minor.patch', where all fields are numbers.
+// If you are just starting your toolbox, you should use '0.1' or '0.1.0'.
+// Use '1.0' or '1.0.0' for a tested, good quality first version.
+Version: 1.0.0
+// Name(s) of the author(s) of this toolbox.
+// They are usually the original copyright holders
+// (persons or entities)
+Author: Team: STH005
+  Other Author
+// Name(s) and email address(es) of the person(s) maintaining this toolbox
+Maintainer: Tarun A H <tarun.ambili123@gmail.com>
+  Venkat Ragavan S <mail2venkat21@gmail.com>
+  Garima Dave <garimadave628@gmail.com>
+  Akash Manish Lad <akashlad4000@gmail.com>
+  Mohana N (Assistant Professor, SAS, Divison of Mathematics, VIT Chennai) <mohana.n@vit.ac.in>
+// Categories that this toolbox belongs to.
+// The toolbox will appear in the Scilab Atoms GUI
+// under the categories that you select here.
+Category: Educational and Research
+ CatB - SScat2
+ biology - modelisation_III
+
+// Name of the institution (company, university, lab...) who has developped the toolbox.
+// If you developped the toolbox as an individual, then just enter "private individual"
+Entity: VIT University Chennai
+
+// Optional website that has more information about this toolbox
+WebSite: https://github.com/Tarun0607/Scilab-R-Toolbox
+
+// License under which the toolbox will be published
+License: BSD-3-Clause
+
+// Version of Scilab supported by this toolbox,
+// prefixed by =, >= ...
+ScilabVersion: >= 6.0
+
+// Other toolbox(es) that must be installed in order
+// this toolboxes to work. Atoms will automatically ensure that
+// the dependent toolboxes listed here are installed on the user's
+// Scilab installation.
+// Each toolbox dependency must be in format:
+//    <operator> <toolbox name> <toolbox version|any>
+// where operator can be: ~, >, <, >=, <=
+// If multiple dependencies, put one per line (starting each line with a space)
+Depends: 
+
+// Creation date
+Date: 2020-07-19
+
+Description: This work is a part of the Scilab Toolbox Hackathon organised by FOSSEE, IIT Bombay in June-July 2020. (https://fossee.in/ https://scilab.in/)
+ - Implementation of various statistical functions of RStudio in Scilab.
+ - RStudio functions can be called from Scilab,
+ - Requires installation of R and Scilab.
+ - Initialising R environment in terminal in linux using "sudo apt-get install r-base" and using "export R_HOME = /usr/lib/R"
+ - Launching Scilab by calling "./scilab"
+ - Running ./run.sh file
+ - Executing the command 'exec builder.sce' in scilab console inside the     toolbox directory
+ - Executing the command 'exec loader.sce' in scilab console inside the     toolbox directory
+ - Calling RStudio methods by declaring it to a variable. For example     declaring as: a = kruskal_wallis() method, declaring as: a =     kruskal_wallis()
+
+

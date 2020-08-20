@@ -1,0 +1,45 @@
+// This file is licensed under CeCILL
+/*
+Authors :
+Venkat Ragavan S (mail2venkat21@gmail.com)
+Garima Dave (garimadave628@gmail.com)
+Akash Manish Lad (akashlad4000@gmail.com)
+Tarun A H (tarun.ambili123@gmail.com)
+Mohana N (Assistant Professor, SAS, Divison of Mathematics, Vit Chennai) (mohana.n@vit.ac.in)
+
+*/
+
+
+function quitModule()
+
+    etc_tlbx  = get_absolute_file_path("test_toolbox.quit");
+    etc_tlbx  = getshortpathname(etc_tlbx);
+    root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+    //unlink libraries
+    [bOK, ilib] = c_link('skeleton_cpp');
+    if bOK then
+        ulink(ilib);
+    end
+
+    [bOK, ilib] = c_link('skeleton_c');
+    if bOK then
+        ulink(ilib);
+    end
+
+    [bOK, ilib] = c_link('skeleton_fortran');
+    if bOK then
+        ulink(ilib);
+    end
+
+    // Remove Preferences GUI
+    // =============================================================================
+    if getscilabmode() == "STD" then
+    removeModulePreferences(root_tlbx);
+    end
+
+endfunction
+
+
+quitModule();
+clear quitModule;

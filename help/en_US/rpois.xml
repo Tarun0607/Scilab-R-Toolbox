@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from multiply.sci using help_from_sci().
+ *
+ -->
+
+
+<!--This file is licensed under CeCILL
+
+Authors :
+Venkat Ragavan S (mail2venkat21@gmail.com)
+Garima Dave (garimadave628@gmail.com)
+Akash Manish Lad (akashlad4000@gmail.com)
+Tarun A H (tarun.ambili123@gmail.com)
+Mohana N (Assistant Professor, SAS, Divison of Mathematics, Vit Chennai) (mohana.n@vit.ac.in)
+
+-->
+
+<refentry version="5.0-subset Scilab" xml:id="rpois" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>rpois</refname>
+    <refpurpose>Calls rpois function defined on R which takes n(number of random values to return) and lambda(the mean value) as input parameters and the result is the random poisson distribution values.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Syntax</title>
+   <synopsis>
+   y = rpois(n,lambda)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>y :</term>
+            <listitem><para> output</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>n and lambda :</term>
+            <listitem><para>n : number of random values to return</para><para>lambda : the mean value</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+The function calls the rpois() function in R that takes n and lambda as the input arguments and returns the random poisson distribution values for the n passed as input.
+   </para>
+   <para>
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+// rpois on n and lambda
+y = rpois(3,5)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Mohana N (Assistant Professor, SAS, Division of Mathematics, VIT Chennai)</member>
+   <member>Venkat Ragavan S</member>
+   <member>Garima Dave</member>
+   <member>Akash Manish Lad</member>
+   <member>Tarun A Hs</member>
+   </simplelist>
+</refsection>
+</refentry>
